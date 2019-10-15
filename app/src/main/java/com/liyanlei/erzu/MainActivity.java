@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 李艳雷
      */
     private Button mBtn;
+    /**
+     * 曾淼
+     */
+    private Button mBtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         mBtn = (Button) findViewById(R.id.btn);
         mBtn.setOnClickListener(this);
+        mBtn2 = (Button) findViewById(R.id.btn2);
+        mBtn2.setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn:
                 Toast.makeText(this, "李艳雷", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.btn2:
+                Toast.makeText(this, "曾淼", Toast.LENGTH_SHORT).show();                break;
         }
     }
 }
